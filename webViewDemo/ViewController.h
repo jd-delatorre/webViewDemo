@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITextFieldDelegate>
+@property (strong, nonatomic) IBOutlet UIWebView *webView;
+@property (strong, nonatomic) IBOutlet UITextField *txtAddress;
+
+- (IBAction)addressChanged:(id)sender;
+- (IBAction)goPressed:(id)sender;
+
+
 
 @end
